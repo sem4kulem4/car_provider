@@ -9,10 +9,10 @@ Django-приложение, которое решает задачу по уп�
 sudo docker-compose up -d --build
 sudo docker-compose exec web python manage.py makemigrations 
 sudo docker-compose exec web python manage.py migrate
-```
-Если нужна админка, то выполнить следующие команды
-```
 sudo docker-compose exec web python manage.py collectstatic --no-input
+```
+Если нужна админка, то создать пользователя в терминале
+```
 sudo docker-compose exec web python manage.py createsuperuser
 ```
 
